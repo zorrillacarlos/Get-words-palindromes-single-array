@@ -19,6 +19,6 @@ function getPalindromesArray(arrayPalindrome) {
     });
 }
 
-const wordsArr = ['osO', 'racecar', 'pineapple', 'porcupine', 'pineenip', 'Ana', 'Juan'];
+const wordsArr = ['1001', 'oso', 'Otto', 'Ana', 'Juan'];
 
 console.log(getPalindromesArray(wordsArr));

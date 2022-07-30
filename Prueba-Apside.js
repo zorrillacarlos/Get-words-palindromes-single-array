@@ -22,3 +22,19 @@ function getPalindromesArray(arrayPalindrome) {
 const wordsArr = ['1001', 'oso', 'Otto', 'Ana', 'Juan'];
 
 console.log(getPalindromesArray(wordsArr));
+
+// Arreglo Palabras Palindrome For
+
+function getPalindromes(wordsArr) {
+  const wordsPalindromeTrue = [];
+  for (let i = 0; i < wordsArr.length; i++) {
+    if (
+      wordsArr[i].toLowerCase() ===
+      wordsArr[i].split("").reverse().join("").toLowerCase()
+    ) {
+      wordsPalindromeTrue.push(` ${wordsArr[i]}`);
+    }
+  }
+  return console.log(`las palabras palindromas en el array son:${wordsPalindromeTrue}`);
+}
+getPalindromes(wordsArr);
